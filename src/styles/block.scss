@@ -1,0 +1,64 @@
+@import 'constants';
+
+.block {
+    width: 100%;
+    height: 25%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 14px;
+    -webkit-transition: height 0.4s;
+    transition: height 0.4s;
+
+    .block-title {
+        font-weight: bold;
+
+        .block-sub-title {
+            font-size: 9px;
+            font-weight: normal;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: height 0.2s;
+            -webkit-transition-delay: 0.1s;
+            transition: height 0.2s;
+            transition-delay: 0.1s;
+        }
+    }
+
+    &.collapsed {
+        height: 0;
+
+        .block-title {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    &.expanded {
+        height: 100%;
+
+        .block-sub-title {
+            height: 20px;
+        }
+    }
+}
+
+#block1 {
+    background-color: $block1-colour;
+}
+
+#block2 {
+    background-color: $block2-colour;
+}
+
+#block3 {
+    background-color: $block3-colour;
+}
+
+#block4 {
+    background-color: $block4-colour;
+}

@@ -1,0 +1,10 @@
+<div id="content" ng-class="{'sidebar-collapsed': $ctrl.sidebarCollapsed}">
+    <swa-sidebar-toggle sidebar-collapsed="$ctrl.sidebarCollapsed" on-click="$ctrl.onClick()"></swa-sidebar-toggle>
+    <swa-block ng-repeat="block in $ctrl.blocks"
+               title="{{block.title}}"
+               id="{{block.id}}"
+               expanded="block.expanded"
+               collapsed="block.collapsed"
+               on-click="$ctrl.blockClicked(block)"></swa-block>
+</div>
+

@@ -1,0 +1,13 @@
+@import 'constants';
+
+#content {
+    float: right;
+    width: 75%;
+    height: calc(100% - #{$navigation-height});
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+
+    &.sidebar-collapsed {
+        width: 100%;
+    }
+}

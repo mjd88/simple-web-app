@@ -1,0 +1,23 @@
+@import 'constants';
+
+#sidebar {
+    width: 25%;
+    height: calc(100% - #{$navigation-height});
+    background-color: $sidebar-colour;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    float: left;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+
+    .sidebar-title {
+        margin-top: 20px; /* appears to be fixed in the video*/
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &.sidebar-collapsed {
+        width: 0;
+    }
+}

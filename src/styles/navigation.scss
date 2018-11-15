@@ -1,0 +1,18 @@
+@import 'constants';
+
+#navigation {
+    width: 100%;
+    height: $navigation-height;
+    background-color: $navigation-colour;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: table;
+
+    .navigation-title {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
